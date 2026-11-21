@@ -1,0 +1,25 @@
+2026-11-21 10:55:11,511 INFO Chargement : 1516948 lignes, 0 horodatages dupliqués supprimés, 0 NaN
+2026-11-21 10:55:11,969 INFO Diagnostic grille : {'n_rows': 1516948, 'start': '2020-02-01 00:00:00', 'end': '2020-09-01 03:59:50', 'dt_median_s': 10.0, 'dt_share_9_13s': 0.9997560892001571, 'n_duplicated_ts': 0, 'n_missing_values': 0, 'n_gaps_gt_60s': 331, 'gap_hours_total': 909.5175, 'n_gaps_gt_1h': 160, 'max_gap_hours': 48.03277777777778, 'regime_share': {'arret': 0.5464, 'vide': 0.2951, 'charge': 0.1585}}
+2026-11-21 10:55:12,144 INFO Cycles de charge : 16967 détectés, 10751 gardés après filtre physique
+2026-11-21 10:55:12,150 INFO Grandeurs inter-cycles manquantes (début de session) : 297 (laissées NaN, pas de bfill)
+2026-11-21 10:55:12,176 INFO Split train 2020-02-01 -> 2020-03-31 23:59:59 : 2727 cycles
+2026-11-21 10:55:12,176 INFO Split val   2020-04-04 -> 2020-05-10 23:59:59 : 1365 cycles
+2026-11-21 10:55:12,177 INFO Split test  2020-05-14 -> 2020-09-01 23:59:59 : 6447 cycles
+2026-11-21 10:55:12,183 INFO Période normale : 10 jours suspects exclus de la référence (01/03, 02/03, 03/03, 04/03, 05/03, 06/03, 07/03, 09/03, 10/03, 11/03) -> 2060 cycles de référence
+2026-11-21 10:55:12,628 INFO [Baseline (résidu Ridge + EWMA)] choix sur validation : q=0.990, K=1, seuil=1.1827 (rappel_val=0, FA/mois_val=0.00)
+2026-11-21 10:55:12,634 INFO [Baseline (résidu Ridge + EWMA)] val : {'n_detectees_avant': 0, 'n_pannes': 1, 'FA_par_mois': 0.0, 'FA_par_mois_IC95': [0.0, 4.16]}
+2026-11-21 10:55:12,648 INFO [Baseline (résidu Ridge + EWMA)] test : {'n_detectees_avant': 3, 'n_pannes': 3, 'FA_par_mois': 5.39, 'FA_par_mois_IC95': [2.95, 9.05]}
+2026-11-21 10:55:12,817 INFO [Isolation Forest] choix sur validation : q=0.950, K=6, seuil=0.5273 (rappel_val=0, FA/mois_val=1.13)
+2026-11-21 10:55:12,823 INFO [Isolation Forest] val : {'n_detectees_avant': 0, 'n_pannes': 1, 'FA_par_mois': 1.13, 'FA_par_mois_IC95': [0.03, 6.28]}
+2026-11-21 10:55:12,833 INFO [Isolation Forest] test : {'n_detectees_avant': 3, 'n_pannes': 3, 'FA_par_mois': 7.32, 'FA_par_mois_IC95': [4.41, 11.43]}
+2026-11-21 10:55:12,924 INFO [ACP (T² / SPE)] choix sur validation : q=0.950, K=6, seuil=9.7243 (rappel_val=0, FA/mois_val=1.13)
+2026-11-21 10:55:12,930 INFO [ACP (T² / SPE)] val : {'n_detectees_avant': 0, 'n_pannes': 1, 'FA_par_mois': 1.13, 'FA_par_mois_IC95': [0.03, 6.28]}
+2026-11-21 10:55:12,941 INFO [ACP (T² / SPE)] test : {'n_detectees_avant': 3, 'n_pannes': 3, 'FA_par_mois': 5.78, 'FA_par_mois_IC95': [3.23, 9.53]}
+2026-11-21 10:55:13,460 INFO [IF complet] choix sur validation : q=0.950, K=6, seuil=0.5273 (rappel_val=0, FA/mois_val=1.13)
+2026-11-21 10:55:13,837 INFO [IF sans duree] choix sur validation : q=0.980, K=3, seuil=0.5904 (rappel_val=0, FA/mois_val=1.13)
+2026-11-21 10:55:14,242 INFO [IF sans repos_fuite] choix sur validation : q=0.980, K=6, seuil=0.5864 (rappel_val=0, FA/mois_val=1.13)
+2026-11-21 10:55:14,634 INFO [IF sans thermique] choix sur validation : q=0.995, K=1, seuil=0.6552 (rappel_val=1, FA/mois_val=1.13)
+2026-11-21 10:55:15,075 INFO [IF sans electrique] choix sur validation : q=0.980, K=3, seuil=0.6128 (rappel_val=0, FA/mois_val=1.13)
+2026-11-21 10:55:15,481 INFO [IF sans tendances] choix sur validation : q=0.950, K=6, seuil=0.5297 (rappel_val=0, FA/mois_val=0.00)
+2026-11-21 10:55:15,963 INFO [IF seulement repos_fuite] choix sur validation : q=0.950, K=3, seuil=0.5784 (rappel_val=0, FA/mois_val=1.13)
+2026-11-21 10:55:18,977 INFO Terminé. Résultats dans /home/user/st-mini-project/results

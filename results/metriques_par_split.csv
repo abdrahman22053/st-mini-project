@@ -1,0 +1,7 @@
+detecteur,split,periode,fenetre_anticipation_j,n_pannes,n_detectees_avant,rappel_evenement,rappel_IC95,fausses_alertes,mois_sains_surveilles,FA_par_mois,FA_par_mois_IC95,part_cycles_en_alarme,rappel_detecteur_aleatoire
+Baseline (résidu Ridge + EWMA),val,"['2020-04-04', '2020-05-10']",7,1,0,0.0,"[0.0, 0.975]",0,0.89,0.0,"[0.0, 4.16]",0.0029,0.0
+Baseline (résidu Ridge + EWMA),test,"['2020-05-14', '2020-09-01']",7,3,3,1.0,"[0.292, 1.0]",14,2.6,5.39,"[2.95, 9.05]",0.1573,0.711
+Isolation Forest,val,"['2020-04-04', '2020-05-10']",7,1,0,0.0,"[0.0, 0.975]",1,0.89,1.13,"[0.03, 6.28]",0.0366,0.228
+Isolation Forest,test,"['2020-05-14', '2020-09-01']",7,3,3,1.0,"[0.292, 1.0]",19,2.6,7.32,"[4.41, 11.43]",0.345,0.814
+ACP (T² / SPE),val,"['2020-04-04', '2020-05-10']",7,1,0,0.0,"[0.0, 0.975]",1,0.89,1.13,"[0.03, 6.28]",0.0359,0.228
+ACP (T² / SPE),test,"['2020-05-14', '2020-09-01']",7,3,3,1.0,"[0.292, 1.0]",15,2.6,5.78,"[3.23, 9.53]",0.2196,0.735

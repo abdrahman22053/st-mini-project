@@ -1,0 +1,8 @@
+variante,n_variables,q,K,val_detectees,val_FA_mois,test_detectees,test_FA_mois,test_avances_h
+complet,12,0.95,6,0,1.13,3,7.32,"[167.3, 167.7, 167.0]"
+sans duree,10,0.98,3,0,1.13,3,6.55,"[167.3, 130.1, 166.3]"
+sans repos_fuite,9,0.98,6,0,1.13,3,5.39,"[167.3, 89.6, 164.0]"
+sans thermique,11,0.995,1,1,1.13,3,8.48,"[167.3, 89.4, 164.0]"
+sans electrique,10,0.98,3,0,1.13,3,6.17,"[167.3, 129.8, 165.8]"
+sans tendances,8,0.95,6,0,0.0,2,1.93,"[None, 93.7, 163.6]"
+seulement repos_fuite,3,0.95,3,0,1.13,3,5.01,"[165.3, 130.1, 166.3]"

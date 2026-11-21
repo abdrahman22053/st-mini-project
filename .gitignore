@@ -1,1 +1,10 @@
+# données brutes (téléchargées par src/download_data.py)
+data/
 MetroPT3(AirCompressor).csv
+# environnement / caches
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# gros fichier intermédiaire régénérable
+results/cycles_scores.csv.gz

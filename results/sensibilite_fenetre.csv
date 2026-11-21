@@ -1,0 +1,16 @@
+detecteur,fenetre_j,detectees,n_pannes,FA_par_mois,rappel_aleatoire
+Baseline (résidu Ridge + EWMA),1,2,3,6.09,0.181
+Baseline (résidu Ridge + EWMA),3,2,3,5.69,0.429
+Baseline (résidu Ridge + EWMA),5,3,3,5.37,0.586
+Baseline (résidu Ridge + EWMA),7,3,3,5.39,0.711
+Baseline (résidu Ridge + EWMA),14,3,3,5.25,0.911
+Isolation Forest,1,2,3,7.37,0.215
+Isolation Forest,3,2,3,7.36,0.516
+Isolation Forest,5,3,3,7.16,0.692
+Isolation Forest,7,3,3,7.32,0.814
+Isolation Forest,14,3,3,7.87,0.973
+ACP (T² / SPE),1,2,3,6.09,0.181
+ACP (T² / SPE),3,2,3,6.02,0.448
+ACP (T² / SPE),5,3,3,5.73,0.61
+ACP (T² / SPE),7,3,3,5.78,0.735
+ACP (T² / SPE),14,3,3,5.77,0.93

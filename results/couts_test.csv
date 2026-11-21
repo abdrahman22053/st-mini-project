@@ -1,0 +1,5 @@
+strategie,FA,pannes_ratees,cout_total_EUR
+Aucune surveillance (maintenance corrective),0,3,60000.0
+Baseline (résidu Ridge + EWMA),14,0,2700.0
+Isolation Forest,19,0,3450.0
+ACP (T² / SPE),15,0,2850.0

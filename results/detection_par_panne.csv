@@ -1,0 +1,13 @@
+detecteur,split,panne,debut,detectee_avant,avance_h,alarme_tardive_seulement
+Baseline (résidu Ridge + EWMA),val,#1,2020-04-18 00:00:00,False,,False
+Baseline (résidu Ridge + EWMA),test,#2,2020-05-29 23:30:00,True,167.3,False
+Baseline (résidu Ridge + EWMA),test,#3,2020-06-05 10:00:00,True,94.2,False
+Baseline (résidu Ridge + EWMA),test,#4,2020-07-15 14:30:00,True,167.0,False
+Isolation Forest,val,#1,2020-04-18 00:00:00,False,,False
+Isolation Forest,test,#2,2020-05-29 23:30:00,True,167.3,False
+Isolation Forest,test,#3,2020-06-05 10:00:00,True,167.7,False
+Isolation Forest,test,#4,2020-07-15 14:30:00,True,167.0,False
+ACP (T² / SPE),val,#1,2020-04-18 00:00:00,False,,False
+ACP (T² / SPE),test,#2,2020-05-29 23:30:00,True,167.3,False
+ACP (T² / SPE),test,#3,2020-06-05 10:00:00,True,89.6,False
+ACP (T² / SPE),test,#4,2020-07-15 14:30:00,True,164.0,False

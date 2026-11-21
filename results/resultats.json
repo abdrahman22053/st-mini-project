@@ -1,0 +1,315 @@
+{
+  "diagnostic": {
+    "n_rows": 1516948,
+    "start": "2020-02-01 00:00:00",
+    "end": "2020-09-01 03:59:50",
+    "dt_median_s": 10.0,
+    "dt_share_9_13s": 0.9997560892001571,
+    "n_duplicated_ts": 0,
+    "n_missing_values": 0,
+    "n_gaps_gt_60s": 331,
+    "gap_hours_total": 909.5175,
+    "n_gaps_gt_1h": 160,
+    "max_gap_hours": 48.03277777777778,
+    "regime_share": {
+      "arret": 0.5464,
+      "vide": 0.2951,
+      "charge": 0.1585
+    }
+  },
+  "jours_exclus_reference": [
+    "2020-03-01",
+    "2020-03-02",
+    "2020-03-03",
+    "2020-03-04",
+    "2020-03-05",
+    "2020-03-06",
+    "2020-03-07",
+    "2020-03-09",
+    "2020-03-10",
+    "2020-03-11"
+  ],
+  "splits": {
+    "train": [
+      "2020-02-01",
+      "2020-03-31 23:59:59"
+    ],
+    "val": [
+      "2020-04-04",
+      "2020-05-10 23:59:59"
+    ],
+    "test": [
+      "2020-05-14",
+      "2020-09-01 23:59:59"
+    ]
+  },
+  "gap_jours": 3,
+  "fenetre_anticipation_j": 7,
+  "budget_FA_mois_validation": 2.0,
+  "configuration_choisie_sur_validation": {
+    "Baseline (résidu Ridge + EWMA)": {
+      "quantile": 0.99,
+      "persistance": 1,
+      "seuil": 1.1827245964156532
+    },
+    "Isolation Forest": {
+      "quantile": 0.95,
+      "persistance": 6,
+      "seuil": 0.5273010880033213
+    },
+    "ACP (T² / SPE)": {
+      "quantile": 0.95,
+      "persistance": 6,
+      "seuil": 9.724295691585311
+    }
+  },
+  "resultats": [
+    {
+      "detecteur": "Baseline (résidu Ridge + EWMA)",
+      "split": "val",
+      "periode": [
+        "2020-04-04",
+        "2020-05-10"
+      ],
+      "fenetre_anticipation_j": 7,
+      "n_pannes": 1,
+      "n_detectees_avant": 0,
+      "rappel_evenement": 0.0,
+      "rappel_IC95": [
+        0.0,
+        0.975
+      ],
+      "fausses_alertes": 0,
+      "mois_sains_surveilles": 0.89,
+      "FA_par_mois": 0.0,
+      "FA_par_mois_IC95": [
+        0.0,
+        4.16
+      ],
+      "part_cycles_en_alarme": 0.0029,
+      "rappel_detecteur_aleatoire": 0.0,
+      "pannes": [
+        {
+          "panne": "#1",
+          "debut": "2020-04-18 00:00:00",
+          "detectee_avant": false,
+          "avance_h": null,
+          "alarme_tardive_seulement": false
+        }
+      ]
+    },
+    {
+      "detecteur": "Baseline (résidu Ridge + EWMA)",
+      "split": "test",
+      "periode": [
+        "2020-05-14",
+        "2020-09-01"
+      ],
+      "fenetre_anticipation_j": 7,
+      "n_pannes": 3,
+      "n_detectees_avant": 3,
+      "rappel_evenement": 1.0,
+      "rappel_IC95": [
+        0.292,
+        1.0
+      ],
+      "fausses_alertes": 14,
+      "mois_sains_surveilles": 2.6,
+      "FA_par_mois": 5.39,
+      "FA_par_mois_IC95": [
+        2.95,
+        9.05
+      ],
+      "part_cycles_en_alarme": 0.1573,
+      "rappel_detecteur_aleatoire": 0.711,
+      "pannes": [
+        {
+          "panne": "#2",
+          "debut": "2020-05-29 23:30:00",
+          "detectee_avant": true,
+          "avance_h": 167.3,
+          "alarme_tardive_seulement": false
+        },
+        {
+          "panne": "#3",
+          "debut": "2020-06-05 10:00:00",
+          "detectee_avant": true,
+          "avance_h": 94.2,
+          "alarme_tardive_seulement": false
+        },
+        {
+          "panne": "#4",
+          "debut": "2020-07-15 14:30:00",
+          "detectee_avant": true,
+          "avance_h": 167.0,
+          "alarme_tardive_seulement": false
+        }
+      ]
+    },
+    {
+      "detecteur": "Isolation Forest",
+      "split": "val",
+      "periode": [
+        "2020-04-04",
+        "2020-05-10"
+      ],
+      "fenetre_anticipation_j": 7,
+      "n_pannes": 1,
+      "n_detectees_avant": 0,
+      "rappel_evenement": 0.0,
+      "rappel_IC95": [
+        0.0,
+        0.975
+      ],
+      "fausses_alertes": 1,
+      "mois_sains_surveilles": 0.89,
+      "FA_par_mois": 1.13,
+      "FA_par_mois_IC95": [
+        0.03,
+        6.28
+      ],
+      "part_cycles_en_alarme": 0.0366,
+      "rappel_detecteur_aleatoire": 0.228,
+      "pannes": [
+        {
+          "panne": "#1",
+          "debut": "2020-04-18 00:00:00",
+          "detectee_avant": false,
+          "avance_h": null,
+          "alarme_tardive_seulement": false
+        }
+      ]
+    },
+    {
+      "detecteur": "Isolation Forest",
+      "split": "test",
+      "periode": [
+        "2020-05-14",
+        "2020-09-01"
+      ],
+      "fenetre_anticipation_j": 7,
+      "n_pannes": 3,
+      "n_detectees_avant": 3,
+      "rappel_evenement": 1.0,
+      "rappel_IC95": [
+        0.292,
+        1.0
+      ],
+      "fausses_alertes": 19,
+      "mois_sains_surveilles": 2.6,
+      "FA_par_mois": 7.32,
+      "FA_par_mois_IC95": [
+        4.41,
+        11.43
+      ],
+      "part_cycles_en_alarme": 0.345,
+      "rappel_detecteur_aleatoire": 0.814,
+      "pannes": [
+        {
+          "panne": "#2",
+          "debut": "2020-05-29 23:30:00",
+          "detectee_avant": true,
+          "avance_h": 167.3,
+          "alarme_tardive_seulement": false
+        },
+        {
+          "panne": "#3",
+          "debut": "2020-06-05 10:00:00",
+          "detectee_avant": true,
+          "avance_h": 167.7,
+          "alarme_tardive_seulement": false
+        },
+        {
+          "panne": "#4",
+          "debut": "2020-07-15 14:30:00",
+          "detectee_avant": true,
+          "avance_h": 167.0,
+          "alarme_tardive_seulement": false
+        }
+      ]
+    },
+    {
+      "detecteur": "ACP (T² / SPE)",
+      "split": "val",
+      "periode": [
+        "2020-04-04",
+        "2020-05-10"
+      ],
+      "fenetre_anticipation_j": 7,
+      "n_pannes": 1,
+      "n_detectees_avant": 0,
+      "rappel_evenement": 0.0,
+      "rappel_IC95": [
+        0.0,
+        0.975
+      ],
+      "fausses_alertes": 1,
+      "mois_sains_surveilles": 0.89,
+      "FA_par_mois": 1.13,
+      "FA_par_mois_IC95": [
+        0.03,
+        6.28
+      ],
+      "part_cycles_en_alarme": 0.0359,
+      "rappel_detecteur_aleatoire": 0.228,
+      "pannes": [
+        {
+          "panne": "#1",
+          "debut": "2020-04-18 00:00:00",
+          "detectee_avant": false,
+          "avance_h": null,
+          "alarme_tardive_seulement": false
+        }
+      ]
+    },
+    {
+      "detecteur": "ACP (T² / SPE)",
+      "split": "test",
+      "periode": [
+        "2020-05-14",
+        "2020-09-01"
+      ],
+      "fenetre_anticipation_j": 7,
+      "n_pannes": 3,
+      "n_detectees_avant": 3,
+      "rappel_evenement": 1.0,
+      "rappel_IC95": [
+        0.292,
+        1.0
+      ],
+      "fausses_alertes": 15,
+      "mois_sains_surveilles": 2.6,
+      "FA_par_mois": 5.78,
+      "FA_par_mois_IC95": [
+        3.23,
+        9.53
+      ],
+      "part_cycles_en_alarme": 0.2196,
+      "rappel_detecteur_aleatoire": 0.735,
+      "pannes": [
+        {
+          "panne": "#2",
+          "debut": "2020-05-29 23:30:00",
+          "detectee_avant": true,
+          "avance_h": 167.3,
+          "alarme_tardive_seulement": false
+        },
+        {
+          "panne": "#3",
+          "debut": "2020-06-05 10:00:00",
+          "detectee_avant": true,
+          "avance_h": 89.6,
+          "alarme_tardive_seulement": false
+        },
+        {
+          "panne": "#4",
+          "debut": "2020-07-15 14:30:00",
+          "detectee_avant": true,
+          "avance_h": 164.0,
+          "alarme_tardive_seulement": false
+        }
+      ]
+    }
+  ],
+  "n_cycles": 10751
+}
