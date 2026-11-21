@@ -16,7 +16,7 @@ bash run_all.sh
 ```
 
 Cette commande :
-1. crée un environnement virtuel figé `.venv` à partir de `requirements.txt` (Python ≥ 3.11) ;
+1. crée un environnement virtuel figé `.venv` à partir de `requirements.txt` (**Python 3.12 ou 3.13**, recommandé : 3.13) ;
 2. télécharge le CSV officiel depuis l'UCI et **vérifie son empreinte SHA-256** (`src/download_data.py`) ;
 3. exécute le pipeline complet (`src/run_pipeline.py`, graines fixées à 42) : diagnostic, cycles causaux, découpage train → gap → validation → gap → test, réglage sur la validation, **évaluation unique sur le test**, ablation et figures ;
 4. ré-exécute le notebook `sujet5_surveillance_compresseur.ipynb` de bout en bout.
